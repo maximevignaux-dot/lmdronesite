@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07182C" />
+  <title>Nos services — Nettoyage, démoussage et inspection par drone | LM Drone</title>
+  <meta name="description" content="Découvrez toutes les prestations LM Drone : nettoyage de toiture, façade, bardage, panneaux photovoltaïques et inspection technique par drone. Pays de la Loire." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://lm-drone.fr/services" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="LM Drone" />
+  <meta property="og:title" content="Nos services — Nettoyage et inspection par drone | LM Drone" />
+  <meta property="og:description" content="Toutes les prestations LM Drone : toiture, façade, bardage, photovoltaïque, inspection technique." />
+  <meta property="og:url" content="https://lm-drone.fr/services" />
+  <meta property="og:image" content="https://lm-drone.fr/uploads/1000018085.jpg" />
+
+  <link rel="icon" type="image/png" href="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/cropped-Drone-VX-15.png?fit=270%2C270&amp;ssl=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lm-drone.fr/"},
+      {"@type":"ListItem","position":2,"name":"Services","item":"https://lm-drone.fr/services"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[
+      {"@type":"Service","position":1,"name":"Nettoyage de toiture par drone","description":"Démoussage et traitement hydrofuge des toitures tuiles, ardoises, fibro-ciment."},
+      {"@type":"Service","position":2,"name":"Nettoyage de façade par drone","description":"Pierre, crépi, bardage métallique ou bois — nettoyage en hauteur sans nacelle."},
+      {"@type":"Service","position":3,"name":"Nettoyage panneaux photovoltaïques","description":"Maintenir le rendement des panneaux solaires par un nettoyage régulier."},
+      {"@type":"Service","position":4,"name":"Inspection de toiture par drone","description":"Inspection technique avec rapport détaillé et prises de vues aériennes."}
+    ]
+  }
+  </script>
+
+  <style>
+    /* Photo header */
+    .page-header--photo { position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+    .page-header--photo .page-header-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(90deg, var(--bg) 0%, var(--bg) 34%, rgba(255,255,255,0.55) 62%, rgba(255,255,255,0.2) 100%),
+        url('https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/06/Capture-decran-2024-06-28-a-14.50.40.png?fit=1600%2C900&amp;ssl=1');
+      background-size: cover;
+      background-position: center right;
+      z-index: 0;
+    }
+    .page-header--photo .container { position: relative; z-index: 1; }
+    @media (max-width: 700px) {
+      .page-header--photo .page-header-bg {
+        background-image:
+          linear-gradient(180deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.88) 100%),
+          url('https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/06/Capture-decran-2024-06-28-a-14.50.40.png?fit=1600%2C900&amp;ssl=1');
+      }
+    }
+    /* Page-specific */
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: clamp(32px, 5vw, 64px);
+      align-items: center;
+      padding: clamp(48px, 7vw, 96px) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-detail:nth-child(even) .service-detail-text { order: 2; }
+    .service-detail:nth-child(even) .service-detail-img { order: 1; }
+    @media (max-width: 880px) {
+      .service-detail { grid-template-columns: 1fr; }
+      .service-detail:nth-child(even) .service-detail-text { order: 1; }
+      .service-detail:nth-child(even) .service-detail-img { order: 0; }
+    }
+    .service-detail-text .num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .service-detail-text h2 { margin-bottom: 20px; }
+    .service-detail-text p { color: var(--text-muted); font-size: 16px; line-height: 1.65; margin-bottom: 12px; }
+    .service-detail-text ul {
+      list-style: none;
+      margin: 24px 0;
+      display: grid;
+      gap: 12px;
+    }
+    .service-detail-text ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--text);
+    }
+    .service-detail-text ul li svg { color: var(--accent); flex-shrink: 0; margin-top: 4px; }
+    .service-detail-img {
+      aspect-ratio: 4/3;
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .service-detail-img img { width:100%; height:100%; object-fit:cover; }
+    .service-detail-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(10,14,18,0.4) 100%);
+    }
+    .surface-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .surface-type {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+      background: var(--surface);
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .surface-type::before {
+      content: "";
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" data-screen-label="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav-brand">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/Drone-VX-15.png?fit=120%2C120&amp;ssl=1" alt="Logo LM Drone" width="38" height="38" />
+        <span>LM Drone</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="zones.html">Zones</a></li>
+        <li><a href="a-propos.html">À&nbsp;propos</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="nav-phone" href="tel:+33644302373">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          06 44 30 23 73
+        </a>
+        <a href="devis.html" class="btn btn-primary">Devis gratuit</a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="index.html#faq">FAQ</a>
+  <a href="devis.html">Demander un devis</a>
+</div>
+
+<main id="content">
+
+<!-- PAGE HEADER -->
+<section class="page-header page-header--photo" data-screen-label="page-header">
+  <div class="page-header-bg" aria-hidden="true"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a>
+      <span>/</span>
+      <span style="color: var(--text);">Services</span>
+    </nav>
+    <span class="eyebrow reveal">5 prestations · 1 drone</span>
+    <h1 class="h-display reveal" style="margin-top:14px; max-width: 22ch;">Tout ce qui se nettoie <em style="color:var(--accent); font-style:normal;">depuis le ciel</em>.</h1>
+    <p class="lead reveal" style="margin-top:18px;">Cinq prestations couvrant l'ensemble des besoins extérieurs de votre bâtiment — toiture, façade, bardage, photovoltaïque et inspection. Toutes opérées au drone, sans échafaudage.</p>
+  </div>
+</section>
+
+<!-- SERVICE 1 : TOITURES -->
+<section id="toitures" data-screen-label="service-toitures">
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-detail-text reveal">
+        <span class="num">01 — Toitures</span>
+        <h2 class="h-2">Démoussage &amp; traitement hydrofuge des toitures.</h2>
+        <p>Mousses, lichens et algues retiennent l'humidité, fissurent les tuiles et favorisent les infiltrations. Notre intervention élimine ces végétations et imperméabilise durablement votre couverture.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Inspection préalable</strong> de la couverture avec rapport visuel.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Pulvérisation drone ou perche</strong> d'un produit curatif&nbsp;/&nbsp;préventif.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Traitement hydrofuge</strong> pour rendre votre revêtement étanche et durable.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Photos après chantier</strong> pour suivre l'évolution du résultat dans le temps.</span>
+          </li>
+        </ul>
+        <div class="surface-types">
+          <div class="surface-type">Tuiles terre cuite</div>
+          <div class="surface-type">Tuiles béton</div>
+          <div class="surface-type">Ardoises</div>
+          <div class="surface-type">Fibro-ciment</div>
+          <div class="surface-type">Bac acier</div>
+          <div class="surface-type">Zinc</div>
+        </div>
+        <div style="margin-top: 32px;">
+          <a href="devis.html?service=toitures" class="btn btn-primary">Devis nettoyage toiture <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="service-detail-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.15.45.png?fit=1200%2C900&amp;ssl=1" alt="Toiture en cours de nettoyage par drone — démoussage" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 2 : FACADES -->
+<section id="facades" class="ba-section" style="border-top:0; border-bottom:0; padding:0;" data-screen-label="service-facades">
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-detail-text reveal">
+        <span class="num">02 — Façades &amp; bardages</span>
+        <h2 class="h-2">Pierre, crépi, bardage — propreté retrouvée.</h2>
+        <p>Les revêtements verticaux s'encrassent rapidement, surtout en zones humides ou industrielles. Le drone accède à toute hauteur sans nacelle, en quelques minutes.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Étude du support</strong> et choix du produit adapté.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Traitement uniforme</strong> sans variation de pression ni risque pour l'enduit.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Accès aux hauteurs</strong> inatteignables aux méthodes traditionnelles.</span>
+          </li>
+        </ul>
+        <div class="surface-types">
+          <div class="surface-type">Pierre naturelle</div>
+          <div class="surface-type">Crépi monocouche</div>
+          <div class="surface-type">Bardage métallique</div>
+          <div class="surface-type">Bardage bois</div>
+          <div class="surface-type">Enduits projetés</div>
+        </div>
+        <div style="margin-top: 32px;">
+          <a href="devis.html?service=facades" class="btn btn-primary">Devis nettoyage façade <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="service-detail-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/Screenshot_20250417_200430_Samsung-Internet.jpg?fit=1200%2C900&amp;ssl=1" alt="Façade avant après nettoyage par drone" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 3 : SOLAIRE -->
+<section id="solaire" data-screen-label="service-solaire">
+  <div class="container">
+    <div class="service-detail">
+      <div class="service-detail-text reveal">
+        <span class="num">03 — Panneaux photovoltaïques</span>
+        <h2 class="h-2">Préservez le rendement de vos panneaux.</h2>
+        <p>Pollens, fientes, poussière et résidus diminuent jusqu'à 30 % la production d'un panneau solaire. Un nettoyage régulier est rentable dès la première année.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Eau déminéralisée</strong> ou produit spécifique selon les recommandations fabricant.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Brossage doux</strong> compatible avec toutes les technologies (monocristallin, polycristallin, couche mince).</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Aucune zone d'ombre</strong> oubliée — vue aérienne intégrale du champ photovoltaïque.</span>
+          </li>
+        </ul>
+        <div style="margin-top: 32px;">
+          <a href="devis.html?service=solaire" class="btn btn-primary">Devis nettoyage solaire <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="service-detail-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/03/Drone-VX-500-x-400-px-4.png?fit=1000%2C800&amp;ssl=1" alt="Drone nettoyant des panneaux photovoltaïques" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 4 : GRANDES SURFACES -->
+<section id="surfaces" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding:0;" data-screen-label="service-surfaces">
+  <div class="container">
+    <div class="service-detail" style="border-bottom:0;">
+      <div class="service-detail-text reveal">
+        <span class="num">04 — Grandes surfaces</span>
+        <h2 class="h-2">Patrimoine, industrie, ERP.</h2>
+        <p>Monuments historiques, bâtiments industriels, sites commerciaux, campings, copropriétés — chaque chantier reçoit un protocole adapté à ses contraintes d'accès, de support et de réglementation.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Étude personnalisée</strong> du site et des contraintes (PMR, accès public, environnement classé).</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Conformité DGAC</strong> pour les vols en zone réglementée ou habitée.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Suivi photo/vidéo</strong> remis au client en fin d'intervention.</span>
+          </li>
+        </ul>
+        <div style="margin-top: 32px;">
+          <a href="devis.html?service=grandes-surfaces" class="btn btn-primary">Demander une étude <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="service-detail-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/Screenshot_20250401_184138_Gallery-2.jpg?fit=1200%2C900&amp;ssl=1" alt="Nettoyage par drone d'un grand bâtiment" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 5 : INSPECTION -->
+<section id="inspection" data-screen-label="service-inspection">
+  <div class="container">
+    <div class="service-detail" style="border-bottom:0;">
+      <div class="service-detail-text reveal">
+        <span class="num">05 — Inspection &amp; prises de vues</span>
+        <h2 class="h-2">Inspection technique &amp; captation aérienne.</h2>
+        <p>Au-delà du nettoyage, le drone est un outil d'expertise. Inspection de couverture avec rapport détaillé, captation photo et vidéo pour vos projets immobiliers, communication ou suivis de chantier.</p>
+        <ul>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Rapport d'inspection</strong> photos haute résolution + annotations des points de vigilance.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Vues aériennes 4K</strong> pour vos annonces immobilières, brochures ou réseaux sociaux.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Suivi de chantier</strong> par captation périodique avec montage final.</span>
+          </li>
+        </ul>
+        <div style="margin-top: 32px;">
+          <a href="devis.html?service=inspection" class="btn btn-primary">Devis inspection <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="service-detail-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/file_000000001f6c51f79d0e79ebf9674b7a_conversation_id67e6ae1d-ed8c-800c-887d-16ff6473bf97message_idc7578ca3-c3a4-48c5-9d2a-d8b83f38fd2a.png?fit=1200%2C900&amp;ssl=1" alt="Inspection de toiture par drone avec rapport" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" data-screen-label="cta">
+  <div class="container container-narrow">
+    <span class="eyebrow">À qui s'adresse le service ?</span>
+    <h2 class="h-1" style="margin-top:14px;">Particuliers, pros, collectivités — <em>tous concernés</em>.</h2>
+    <p class="lead" style="margin: 18px auto 26px;">Propriétés privées et publiques, bâtiments industriels ou commerciaux, logements résidentiels et collectifs, collectivités, monuments historiques, campings, chalets. Tout bâtiment en contact avec l'extérieur a besoin d'un entretien.</p>
+    <div class="actions">
+      <a href="devis.html" class="btn btn-primary btn-lg">Demander mon devis<span class="arrow">→</span></a>
+      <a href="tel:+33644302373" class="btn btn-ghost btn-lg">06 44 30 23 73</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div class="nav-brand">
+          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/Drone-VX-15.png?fit=120%2C120&amp;ssl=1" alt="LM Drone" width="38" height="38" />
+          <span>LM Drone</span>
+        </div>
+        <p>Démoussage et nettoyage de toitures et bardages, prises de vues aériennes — par des télépilotes professionnels habilités RS5235 et certifiés DGAC.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#toitures">Nettoyage toiture</a></li>
+          <li><a href="services.html#facades">Nettoyage façade</a></li>
+          <li><a href="services.html#solaire">Panneaux photovoltaïques</a></li>
+          <li><a href="services.html#inspection">Inspection &amp; vues aériennes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="a-propos.html">Qui sommes-nous</a></li>
+          <li><a href="index.html#realisations">Réalisations</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="devis.html">Demander un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33644302373">06 44 30 23 73</a></li>
+          <li><a href="mailto:maxime.lmdrone@gmail.com">maxime.lmdrone@gmail.com</a></li>
+          <li style="color: var(--text-muted);">743 chemin de l'Oirie<br/>49770 Longuenée en Anjou</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 LM Drone. Tous droits réservés.</div>
+      <div class="legal">
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <a href="cgv.html">Conditions générales de vente</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-cta">
+  <a href="tel:+33644302373" aria-label="Appeler LM Drone">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="shared.js?v=5"></script>
+</body>
+</html>

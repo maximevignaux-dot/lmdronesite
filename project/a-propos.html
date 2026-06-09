@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07182C" />
+  <title>Qui sommes-nous — LM Drone, télépilote certifié DGAC en Pays de la Loire</title>
+  <meta name="description" content="Jeune entreprise angevine spécialisée dans le nettoyage et l'inspection par drone. Télépilote professionnel certifié DGAC · RS5235. Travail bien fait et bonne humeur." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://lm-drone.fr/a-propos" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="LM Drone" />
+  <meta property="og:title" content="Qui sommes-nous — LM Drone" />
+  <meta property="og:description" content="Entreprise angevine certifiée DGAC, spécialisée dans le nettoyage par drone." />
+  <meta property="og:url" content="https://lm-drone.fr/a-propos" />
+  <meta property="og:image" content="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.19.39.png?fit=1200%2C630&amp;ssl=1" />
+
+  <link rel="icon" type="image/png" href="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/cropped-Drone-VX-15.png?fit=270%2C270&amp;ssl=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AboutPage",
+    "name":"Qui sommes-nous — LM Drone",
+    "url":"https://lm-drone.fr/a-propos",
+    "about":{ "@type":"Organization", "name":"LM Drone", "foundingLocation":"Longuenée en Anjou, France" }
+  }
+  </script>
+
+  <style>
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(32px, 5vw, 64px);
+      align-items: center;
+      padding-top: clamp(48px, 6vw, 80px);
+      padding-bottom: clamp(48px, 6vw, 80px);
+    }
+    @media (max-width: 880px) { .about-hero { grid-template-columns: 1fr; } }
+    .about-portrait {
+      aspect-ratio: 4/5;
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .about-portrait img { width:100%; height:100%; object-fit:cover; }
+    .about-portrait .caption {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(10,14,18,0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      border-radius: var(--r-full);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    @media (max-width: 720px) { .values-grid { grid-template-columns: 1fr; } }
+    .value-card {
+      background: var(--surface);
+      padding: 32px 28px;
+    }
+    .value-card .big-num {
+      font-family: var(--font-display);
+      font-size: 48px;
+      letter-spacing: -0.04em;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .value-card h3 { font-size: 22px; margin-bottom: 12px; }
+    .value-card p { color: var(--text-muted); font-size: 15px; line-height: 1.55; }
+
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 720px) { .credentials { grid-template-columns: repeat(2, 1fr); } }
+    .credential {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      background: var(--surface);
+      text-align: center;
+    }
+    .credential .label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .credential .value {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+
+    .equipment {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(32px, 5vw, 64px);
+      align-items: center;
+    }
+    @media (max-width: 880px) { .equipment { grid-template-columns: 1fr; } }
+    .equipment-img {
+      aspect-ratio: 1/1;
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .equipment-img img { width: 100%; height: 100%; object-fit: contain; position: relative; z-index: 1; }
+    .equipment-img::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(0,229,176,0.12), transparent 60%);
+    }
+    .equipment-spec { display: flex; flex-direction: column; gap: 16px; margin-top: 24px; }
+    .equipment-spec .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .equipment-spec .row span:first-child {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 11px;
+    }
+    .equipment-spec .row span:last-child {
+      color: var(--text);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" data-screen-label="header">
+  <div class="container">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav-brand">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/Drone-VX-15.png?fit=120%2C120&amp;ssl=1" alt="Logo LM Drone" width="38" height="38" />
+        <span>LM Drone</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="zones.html">Zones</a></li>
+        <li><a href="a-propos.html" class="active">À&nbsp;propos</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="nav-phone" href="tel:+33644302373">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          06 44 30 23 73
+        </a>
+        <a href="devis.html" class="btn btn-primary">Devis gratuit</a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="index.html#faq">FAQ</a>
+  <a href="devis.html">Demander un devis</a>
+</div>
+
+<main id="content">
+
+<!-- PAGE HEADER -->
+<section class="page-header" data-screen-label="page-header">
+  <div class="ambient-grid"></div>
+  <div class="ambient-glow" style="top:-200px; left:30%;"></div>
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>/</span>
+      <span style="color: var(--text);">À propos</span>
+    </nav>
+    <span class="eyebrow reveal">L'équipe</span>
+    <h1 class="h-display reveal" style="margin-top:14px; max-width: 22ch;">Une entreprise angevine, certifiée <em style="color:var(--accent); font-style:normal;">DGAC</em>.</h1>
+    <p class="lead reveal" style="margin-top:18px;">Nous sommes spécialisés dans la prestation par drone : nettoyage de toitures, façades, bardages et inspections aériennes. Une jeune entreprise basée en Maine-et-Loire.</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section data-screen-label="story">
+  <div class="container">
+    <div class="about-hero">
+      <div class="about-portrait reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.19.39.png?fit=900%2C1100&amp;ssl=1" alt="Maxime, télépilote LM Drone, en intervention" loading="lazy" />
+        <div class="caption">Maxime · Télépilote DGAC</div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Notre histoire</span>
+        <h2 class="h-2" style="margin: 16px 0 24px;">Le drone au service du bâtiment.</h2>
+        <p style="color: var(--text-muted); font-size: 17px; line-height: 1.7; margin-bottom: 16px;">
+          LM Drone est née d'un constat simple&nbsp;: nettoyer une toiture ou inspecter une façade ne devrait plus signifier monter sur un toit. Les drones professionnels permettent aujourd'hui d'opérer plus vite, plus sûrement et à moindre coût.
+        </p>
+        <p style="color: var(--text-muted); font-size: 17px; line-height: 1.7; margin-bottom: 16px;">
+          Implantée à <strong style="color: var(--text);">Longuenée en Anjou</strong>, notre équipe intervient sur l'ensemble du Maine-et-Loire et des départements limitrophes pour les particuliers, les copropriétés, les collectivités et les acteurs industriels.
+        </p>
+        <p style="color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+          Notre engagement&nbsp;: <strong style="color: var(--text);">le travail bien fait, dans la bonne humeur</strong>, avec un matériel à la pointe et une transparence complète sur chaque chantier.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="process-section" data-screen-label="valeurs">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nos valeurs</span>
+      <h2 class="h-1">Trois principes qui guident chaque mission.</h2>
+    </div>
+    <div class="values-grid reveal">
+      <div class="value-card">
+        <div class="big-num">01</div>
+        <h3>Sécurité avant tout</h3>
+        <p>Aucune intervention en hauteur sans drone. Aucun compromis sur la conformité réglementaire. Le télépilote reste au sol — chaque chantier est planifié dans les règles DGAC.</p>
+      </div>
+      <div class="value-card">
+        <div class="big-num">02</div>
+        <h3>Respect du support</h3>
+        <p>Étude préalable systématique, produits biodégradables certifiés Dalep, traitement uniforme sans haute pression. On préserve le bâtiment, pas seulement son apparence.</p>
+      </div>
+      <div class="value-card">
+        <div class="big-num">03</div>
+        <h3>Transparence totale</h3>
+        <p>Devis détaillé, photos avant/après, suivi de chantier, rapport d'inspection. Vous savez exactement ce qui a été fait, comment, et pour quel résultat attendu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section data-screen-label="credentials">
+  <div class="container">
+    <div class="section-head reveal text-center" style="margin-inline: auto;">
+      <span class="eyebrow">Certifications</span>
+      <h2 class="h-1" style="margin-top:16px;">Habilités, formés, assurés.</h2>
+    </div>
+    <div class="credentials reveal">
+      <div class="credential">
+        <div class="label">Habilitation</div>
+        <div class="value">RS5235</div>
+      </div>
+      <div class="credential">
+        <div class="label">Autorité</div>
+        <div class="value">DGAC</div>
+      </div>
+      <div class="credential">
+        <div class="label">Catégorie</div>
+        <div class="value">Pro · Open</div>
+      </div>
+      <div class="credential">
+        <div class="label">Assurance</div>
+        <div class="value">RC Pro</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="ba-section" style="border-top:0;" data-screen-label="equipement">
+  <div class="container">
+    <div class="equipment">
+      <div class="equipment-img reveal">
+        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/03/Drone-VX-500-x-400-px-4.png?fit=900%2C900&amp;ssl=1" alt="DJI Matrice 350 RTK — drone professionnel LM Drone" loading="lazy" />
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Équipement</span>
+        <h2 class="h-2" style="margin: 16px 0 16px;">Le DJI Matrice 350 RTK.</h2>
+        <p style="color: var(--text-muted); font-size: 16px; line-height: 1.65;">
+          Notre drone est un DJI Matrice 350 RTK, plateforme professionnelle de référence pour l'inspection et le traitement de surfaces. Positionnement RTK centimétrique, vol stable par tous temps et charge utile polyvalente — l'outil adapté aux interventions sur toiture et grande hauteur.
+        </p>
+        <div class="equipment-spec">
+          <div class="row"><span>Modèle</span><span>DJI Matrice 350 RTK</span></div>
+          <div class="row"><span>Autonomie</span><span>Jusqu'à 55 minutes</span></div>
+          <div class="row"><span>Positionnement</span><span>RTK centimétrique</span></div>
+          <div class="row"><span>Indice de protection</span><span>IP55</span></div>
+          <div class="row"><span>Caméra inspection</span><span>Zenmuse H20 · zoom + thermique</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" data-screen-label="cta">
+  <div class="container container-narrow">
+    <span class="eyebrow">On en discute ?</span>
+    <h2 class="h-1" style="margin-top:14px;">Un projet ? <em>Parlons-en</em>.</h2>
+    <p class="lead" style="margin: 18px auto 26px;">Une simple question, un devis, un projet plus ambitieux — appelez-nous ou écrivez-nous, nous répondons toujours.</p>
+    <div class="actions">
+      <a href="devis.html" class="btn btn-primary btn-lg">Demander un devis<span class="arrow">→</span></a>
+      <a href="tel:+33644302373" class="btn btn-ghost btn-lg">06 44 30 23 73</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div class="nav-brand">
+          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/Drone-VX-15.png?fit=120%2C120&amp;ssl=1" alt="LM Drone" width="38" height="38" />
+          <span>LM Drone</span>
+        </div>
+        <p>Démoussage et nettoyage de toitures et bardages, prises de vues aériennes — par des télépilotes professionnels habilités RS5235 et certifiés DGAC.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#toitures">Nettoyage toiture</a></li>
+          <li><a href="services.html#facades">Nettoyage façade</a></li>
+          <li><a href="services.html#solaire">Panneaux photovoltaïques</a></li>
+          <li><a href="services.html#inspection">Inspection &amp; vues aériennes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="a-propos.html">Qui sommes-nous</a></li>
+          <li><a href="index.html#realisations">Réalisations</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="devis.html">Demander un devis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33644302373">06 44 30 23 73</a></li>
+          <li><a href="mailto:maxime.lmdrone@gmail.com">maxime.lmdrone@gmail.com</a></li>
+          <li style="color: var(--text-muted);">743 chemin de l'Oirie<br/>49770 Longuenée en Anjou</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 LM Drone. Tous droits réservés.</div>
+      <div class="legal">
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <a href="cgv.html">Conditions générales de vente</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="floating-cta">
+  <a href="tel:+33644302373" aria-label="Appeler LM Drone">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="shared.js?v=5"></script>
+</body>
+</html>
