@@ -13,6 +13,10 @@
     el.style.transition = 'none';
     el.style.opacity = '1';
     el.style.transform = 'none';
+    el.querySelectorAll('img').forEach(img => {
+      img.style.transition = 'none';
+      img.style.clipPath = 'none';
+    });
   };
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const heroEls = document.querySelectorAll('.hero-anim, .hero-anim-visual');
@@ -50,12 +54,22 @@
     });
   });
 
-  // Reveal on scroll
+  // Reveal on scroll — with cascade: sibling reveals stagger their entrance
+  document.querySelectorAll('.reveal').forEach(el => {
+    const parent = el.parentElement;
+    if (!parent) return;
+    const sibs = Array.from(parent.children).filter(c => c.classList && c.classList.contains('reveal'));
+    if (sibs.length > 1) {
+      el.style.transitionDelay = Math.min(sibs.indexOf(el) * 80, 480) + 'ms';
+    }
+  });
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
           e.target.classList.add('in');
+          // clear the stagger delay so hover transitions stay snappy
+          setTimeout(() => { e.target.style.transitionDelay = ''; }, 1300);
           io.unobserve(e.target);
         }
       });
@@ -83,7 +97,7 @@
       handle.style.left = x + '%';
       after.style.clipPath = `inset(0 0 0 ${x}%)`;
     };
-    const onDown = (e) => { active = true; setX(e.clientX ?? e.touches[0].clientX); };
+    const onDown = (e) => { active = true; wrap.classList.add('touched'); setX(e.clientX ?? e.touches[0].clientX); };
     const onMove = (e) => { if (!active) return; setX(e.clientX ?? e.touches[0].clientX); };
     const onUp = () => { active = false; };
     wrap.addEventListener('mousedown', onDown);
@@ -182,5 +196,90 @@
         });
       }, { passive: true });
     }
+  }
+
+  // ===== Signature animations =====
+
+  // Typewriter word rotator (hero headline)
+  document.querySelectorAll('.type-words').forEach(el => {
+    const words = (el.dataset.words || '').split('|').filter(Boolean);
+    if (words.length < 2 || reduceMotion) return;
+    let wi = 0, ci = words[0].length, deleting = true;
+    const tick = () => {
+      const w = words[wi];
+      if (deleting) {
+        ci--;
+        el.textContent = w.slice(0, ci);
+        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; setTimeout(tick, 300); return; }
+        setTimeout(tick, 40);
+      } else {
+        ci++;
+        el.textContent = words[wi].slice(0, ci);
+        if (ci === words[wi].length) { deleting = true; setTimeout(tick, 2400); return; }
+        setTimeout(tick, 70);
+      }
+    };
+    setTimeout(tick, 2600);
+  });
+
+  // Trust strip → infinite marquee
+  const tg = document.querySelector('.trust-grid');
+  if (tg && !reduceMotion) {
+    const group = document.createElement('div');
+    group.className = 'marquee-group';
+    while (tg.firstElementChild) group.appendChild(tg.firstElementChild);
+    const clone = group.cloneNode(true);
+    clone.setAttribute('aria-hidden', 'true');
+    tg.appendChild(group);
+    tg.appendChild(clone);
+    tg.classList.add('marquee-on');
+  }
+
+  // 3D tilt on cards and hero visual (desktop pointers only)
+  if (!reduceMotion && window.matchMedia('(pointer: fine)').matches) {
+    document.querySelectorAll('.service-card, .adv-item, .hero-visual').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform = `perspective(900px) rotateY(${(x * 4).toFixed(2)}deg) rotateX(${(-y * 4).toFixed(2)}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  }
+
+  // Scroll progress bar
+  const prog = document.createElement('div');
+  prog.className = 'scroll-progress';
+  prog.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(prog);
+  const updateProg = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    prog.style.transform = `scaleX(${max > 0 ? h.scrollTop / max : 0})`;
+  };
+  window.addEventListener('scroll', updateProg, { passive: true });
+  updateProg();
+
+  // Drone flying across the hero
+  const heroEl = document.querySelector('.hero');
+  if (heroEl && !reduceMotion) {
+    const fly = document.createElement('div');
+    fly.className = 'drone-flyer';
+    fly.setAttribute('aria-hidden', 'true');
+    fly.innerHTML =
+      '<svg width="84" height="40" viewBox="0 0 84 40" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<g class="props">' +
+          '<line x1="2" y1="6" x2="30" y2="6" stroke="#9FB4CC" stroke-width="2" stroke-linecap="round"/>' +
+          '<line x1="54" y1="6" x2="82" y2="6" stroke="#9FB4CC" stroke-width="2" stroke-linecap="round"/>' +
+        '</g>' +
+        '<rect x="12" y="8" width="8" height="6" rx="2" fill="#3FE08F"/>' +
+        '<rect x="64" y="8" width="8" height="6" rx="2" fill="#3FE08F"/>' +
+        '<path d="M16 14 L34 21 H50 L68 14" stroke="#9FB4CC" stroke-width="2.5" fill="none"/>' +
+        '<rect x="30" y="18" width="24" height="11" rx="5.5" fill="#E6ECF4"/>' +
+        '<circle cx="42" cy="33" r="4" fill="#0B1B30" stroke="#3FE08F" stroke-width="1.5"/>' +
+        '<circle class="led" cx="51" cy="23" r="2" fill="#3FE08F"/>' +
+      '</svg>';
+    heroEl.appendChild(fly);
   }
 })();
