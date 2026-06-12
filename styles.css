@@ -1662,3 +1662,9 @@ section.tight { padding: clamp(40px, 5vw, 64px) 0; }
 
 /* Cards get a smooth transform for the 3D tilt (JS-driven) */
 .service-card, .adv-item, .hero-visual { will-change: transform; }
+
+/* Inline 2-col content grids stack on mobile (inline styles need !important) */
+@media (max-width: 880px) {
+  .local-grid { grid-template-columns: 1fr !important; }
+  .callout-cta { text-align: left !important; }
+}
