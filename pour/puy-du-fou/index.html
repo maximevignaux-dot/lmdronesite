@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposition LM Drone pour le Puy du Fou</title>
+<meta name="description" content="Démoussage des toitures, nettoyage des façades, pierres et enduits de vos décors et de vos hôtels, par drone ou à la perche télescopique, depuis le sol, pendant la fermeture du parc.">
+<link rel="icon" type="image/png" href="/uploads/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E0F0F;--ink-2:#1A1C1C;--paper:#FFFFFF;--soft:#F4F5F3;--line:#E4E6E2;--muted:#5C625E;--green:#00BF62;--green-d:#009E51;--green-soft:#E6F8EE}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;font-weight:600;text-decoration:none;padding:15px 26px;border-radius:10px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--green-d);transform:translateY(-1px)}
+.tel{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+.eyebrow{display:inline-block;background:var(--green);color:#fff;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:4px}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;color:#fff;background:var(--ink) url("/mail/hero_chateaux.jpg") center 30%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.15) 35%,rgba(0,0,0,.85) 100%)}
+.hero>*{position:relative}
+.hero>.wrap{width:100%}
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:24px;padding-bottom:24px}
+.top img{width:110px}
+.top span{font-size:14px;color:#ddd;text-align:right}
+.top b{color:var(--green);font-weight:600}
+.hero-body{margin-top:auto;padding-bottom:72px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);max-width:860px;margin:18px 0}
+.hero p{font-size:clamp(17px,1.6vw,20px);max-width:720px;color:#eaeaea}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:30px}
+/* sections */
+section{padding:88px 0}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d);margin-bottom:12px}
+h2{font-size:clamp(28px,3.4vw,42px);max-width:760px;margin-bottom:36px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--soft);border-radius:16px;padding:28px}
+.card .num{font-family:"Space Grotesk",Inter,system-ui,sans-serif;font-weight:700;color:var(--green);font-size:15px}
+.card h3{font-size:21px;margin:10px 0 10px}
+.card p{color:var(--muted);font-size:16px}
+.dark{background:var(--ink);color:#fff}
+.dark .kicker{color:var(--green)}
+.methods{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.m{border:1px solid #2A2D2C;border-radius:16px;padding:28px}
+.m h3{font-size:20px;margin-bottom:8px;color:var(--green)}
+.m p{color:#C9CCCA;font-size:16px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.g img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.steps li{position:relative;padding-top:56px}
+.steps li::before{content:"";position:absolute;top:19px;left:40px;right:-20px;height:2px;background:var(--line)}
+.steps li:last-child::before{display:none}
+.dot{position:absolute;top:0;left:0;width:40px;height:40px;border-radius:50%;background:var(--green);color:#fff;font-family:"Space Grotesk",Inter,system-ui,sans-serif;font-weight:700;display:grid;place-items:center}
+.steps h3{font-size:20px;margin-bottom:6px}
+.steps p{color:var(--muted);font-size:16px}
+.pairs{display:grid;grid-template-columns:1fr;gap:40px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pair.wide .shots{grid-template-columns:1fr 1fr}
+.shot{position:relative}
+.shot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.pair.wide .shot img{aspect-ratio:2/1}
+.chip{position:absolute;left:12px;bottom:12px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.chip.after{background:var(--green)}
+figcaption{margin-top:10px;color:var(--muted);font-size:14px}
+.refs{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0;text-align:center}
+.refs p:first-child{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.refs p:last-child{font-family:"Space Grotesk",Inter,system-ui,sans-serif;font-size:clamp(18px,2.2vw,24px);font-weight:600}
+.refs i{color:var(--green);font-style:normal;margin:0 6px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.trust div{background:var(--soft);border-radius:12px;padding:18px 20px;font-size:15px;font-weight:500}
+.trust div::before{content:"✓";color:var(--green);font-weight:700;margin-right:8px}
+.cta{background:var(--green-soft);border-radius:22px;padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.cta h2{margin-bottom:14px}
+.cta p{color:var(--ink-2)}
+.cta .side{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.cta .tel{color:var(--ink);font-size:20px}
+footer{background:var(--ink);color:#9a9e9c;font-size:14px;padding:28px 0}
+footer a{color:var(--green);text-decoration:none}
+@media (max-width:900px){
+  .cards,.methods,.trust{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+  .steps li:nth-child(2)::before{display:none}
+  .cta{grid-template-columns:1fr;padding:36px}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  section{padding:60px 0}
+  .cards,.methods,.trust,.steps{grid-template-columns:1fr}
+  .steps li::before{display:none}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery .g:last-child{grid-column:span 2}
+  .gallery .g:last-child img{aspect-ratio:16/10}
+  .hero{min-height:92vh}
+  .top span{display:none}
+  .cta{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap top"><a href="https://lm-drone.fr"><img src="/mail/logo_lmdrone.png" alt="LM Drone"></a>
+    <span>Toitures · Façades · Bardages<br><b>Drone &amp; perche télescopique</b></span></div>
+  <div class="wrap hero-body">
+    <span class="eyebrow">Proposition pour le Puy du Fou · Les Epesses (85)</span>
+    <h1>Des toitures et des décors à la hauteur du spectacle</h1>
+    <p>Démoussage des toitures, nettoyage des façades, pierres et enduits de vos décors et de vos hôtels, par drone ou à la perche télescopique, depuis le sol, pendant la fermeture du parc.</p>
+    <div class="actions"><a class="btn" href="mailto:maxime.lmdrone@gmail.com?subject=Puy%20du%20Fou%20%E2%80%93%20visite%20technique%20LM%20Drone&amp;body=Bonjour%20Maxime%2C%0A%0AJe%20souhaite%20organiser%20une%20visite%20technique.%0A%0ANom%20%3A%20%0AFonction%20%3A%20%0AT%C3%A9l%C3%A9phone%20%3A%20%0AB%C3%A2timents%20concern%C3%A9s%20%3A%20%0ADisponibilit%C3%A9s%20%3A%20%0A">Organiser une visite</a>
+      <a class="tel" href="tel:+33644302373">☎ 06 44 30 23 73</a></div>
+  </div>
+</header>
+
+<section><div class="wrap">
+  <p class="kicker">Votre site</p>
+  <h2>Ce que nous avons compris</h2>
+  <div class="cards"><article class="card"><span class="num">01</span><h3>Un patrimoine reconstitué à grande échelle</h3><p>Cités, villages, château, arènes et six hôtels thématiques : ardoise, tuile, pierre, enduits et bois, sur des volumes et des hauteurs très variés.</p></article><article class="card"><span class="num">02</span><h3>Un public chaque jour de la saison</h3><p>Les travaux doivent se faire hors ouverture, sans échafaudage visible ni emprise sur les allées et les décors.</p></article><article class="card"><span class="num">03</span><h3>Nettoyer sans effacer la patine</h3><p>Mousses, lichens et algues abîment l&#x27;image et les matériaux, mais l&#x27;effet vieilli voulu par vos décorateurs doit rester. On valide le rendu avec eux sur une zone témoin avant d&#x27;aller plus loin.</p></article></div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+  <p class="kicker">Notre méthode</p>
+  <h2>Tout se fait depuis le sol, sans échafaudage</h2>
+  <div class="methods">
+    <div class="m"><h3>Par drone</h3><p>Toitures de grande hauteur, tours, grands volumes et zones inaccessibles.</p></div>
+    <div class="m"><h3>À la perche télescopique</h3><p>Toitures basses, façades et pignons accessibles depuis le sol.</p></div>
+    <div class="m"><h3>Produits certifiés Monuments historiques</h3><p>Des traitements adaptés aux matériaux anciens : ardoise, tuile, pierre, enduits.</p></div>
+  </div>
+  <div class="gallery"><figure class="g tall"><img src="/mail/chateau_drone.jpg" alt="Intervention par drone sur un château" loading="lazy"></figure><figure class="g tall"><img src="/mail/chateau_toiture.jpg" alt="Toiture d&#x27;ardoise de grande hauteur" loading="lazy"></figure><figure class="g tall"><img src="/mail/chateau_m350.jpg" alt="Drone de traitement en approche" loading="lazy"></figure></div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Notre proposition</p>
+  <h2>Quatre étapes, à votre rythme</h2>
+  <ol class="steps"><li><span class="dot">1</span><div><h3>Visite technique</h3><p>Nous parcourons le site avec vos équipes et repérons les bâtiments prioritaires.</p></div></li><li><span class="dot">2</span><div><h3>Zone témoin</h3><p>Un essai sur un décor ou un hôtel de votre choix, pour valider le rendu avec vos décorateurs.</p></div></li><li><span class="dot">3</span><div><h3>Plan d&#x27;intervention</h3><p>Un planning chiffré bâtiment par bâtiment, calé sur la fermeture hivernale.</p></div></li><li><span class="dot">4</span><div><h3>Entretien suivi</h3><p>Un passage régulier pour garder toitures et façades propres d&#x27;une saison à l&#x27;autre.</p></div></li></ol>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <p class="kicker">Réalisations</p>
+  <h2>Avant / après</h2>
+  <div class="pairs"><figure class="pair">
+          <div class="shots"><div class="shot"><img src="/mail/pv_avant.jpg" alt="Avant – Pierre &amp; Vacances · Résidence Premium Olonne (85)"><span class="chip">Avant</span></div>
+          <div class="shot"><img src="/mail/pv_apres.jpg" alt="Après – Pierre &amp; Vacances · Résidence Premium Olonne (85)"><span class="chip after">Après</span></div></div>
+          <figcaption>Pierre &amp; Vacances · Résidence Premium Olonne (85)</figcaption></figure><figure class="pair wide">
+          <div class="shots"><div class="shot"><img src="/mail/toit_avant.jpg" alt="Avant – Toiture en ardoise"><span class="chip">Avant</span></div>
+          <div class="shot"><img src="/mail/toit_apres.jpg" alt="Après – Toiture en ardoise"><span class="chip after">Après</span></div></div>
+          <figcaption>Toiture en ardoise</figcaption></figure></div>
+  <div class="refs" style="margin-top:56px"><p>Ils nous ont fait confiance</p><p>Pierre &amp; Vacances <i>·</i> Parc des Expositions d&#x27;Angers <i>·</i> …</p></div>
+  <div class="trust">
+    <div>Télépilote certifié DGAC</div><div>Assuré RC Pro</div>
+    <div>Produits certifiés Monuments historiques</div><div>Basé à Longuenée-en-Anjou, à 1h15 environ des Epesses</div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="cta">
+    <div><h2>Préparons votre prochaine intersaison</h2><p>Je me déplace aux Epesses pour une visite avec vos équipes techniques et décor. Laissez-moi vos coordonnées ou appelez-moi directement.</p></div>
+    <div class="side"><a class="btn" href="mailto:maxime.lmdrone@gmail.com?subject=Puy%20du%20Fou%20%E2%80%93%20visite%20technique%20LM%20Drone&amp;body=Bonjour%20Maxime%2C%0A%0AJe%20souhaite%20organiser%20une%20visite%20technique.%0A%0ANom%20%3A%20%0AFonction%20%3A%20%0AT%C3%A9l%C3%A9phone%20%3A%20%0AB%C3%A2timents%20concern%C3%A9s%20%3A%20%0ADisponibilit%C3%A9s%20%3A%20%0A">Organiser une visite</a>
+      <a class="tel" href="tel:+33644302373">☎ 06 44 30 23 73</a>
+      <a href="mailto:maxime.lmdrone@gmail.com" style="color:var(--green-d);text-decoration:none">maxime.lmdrone@gmail.com</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Maxime · Gérant, LM DRONE SARL · 743 chemin de l'Oirie, 49770 Longuenée-en-Anjou · <a href="https://lm-drone.fr">lm-drone.fr</a><br>
+Page préparée pour Puy du Fou.</div></footer>
+</body>
+</html>
