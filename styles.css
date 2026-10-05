@@ -35,7 +35,7 @@
   --success: #0DA853;
 
   /* Type */
-  --font-display: "Space Grotesk", "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 

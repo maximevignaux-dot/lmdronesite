@@ -27,8 +27,8 @@
   <meta property="og:description" content="Démoussage et nettoyage par drone de toitures, façades et bardages. Télépilote DGAC certifié. Sans échafaudage, écologique. Devis gratuit sous 48 h." />
   <meta property="og:url" content="https://lm-drone.fr/" />
   <meta property="og:image" content="https://lm-drone.fr/uploads/1000018085.jpg" />
-  <meta property="og:image:width" content="1962" />
-  <meta property="og:image:height" content="1079" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="880" />
   <meta property="og:image:alt" content="Drone LM Drone pulvérisant un traitement sur une toiture en ardoise" />
 
   <!-- Twitter -->
@@ -43,7 +43,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Perf -->
   <link rel="preload" as="image" href="uploads/Screenshot_20260609_212132_Gallery.jpg" fetchpriority="high" />
@@ -66,7 +66,7 @@
       grid-template-columns: repeat(6, 1fr);
       gap: 12px;
     }
-    .ig-grid image-slot {
+    .ig-grid .ig-cell {
       display: block;
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -74,6 +74,8 @@
       border-radius: var(--r-md);
       overflow: hidden;
     }
+    .ig-grid .ig-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+    .ig-grid .ig-cell:hover img { transform: scale(1.05); }
     @media (max-width: 880px) { .ig-grid { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 480px) { .ig-grid { grid-template-columns: repeat(2, 1fr); } }
   </style>
@@ -289,7 +291,7 @@
     <div class="services-grid">
       <article class="service-card span-6 reveal">
         <div class="img-wrap">
-          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.15.45.png?fit=900%2C700&amp;ssl=1" alt="Toiture en cours de nettoyage par drone" width="900" height="700" loading="lazy" />
+          <img src="/uploads/1000018122.jpg" alt="Drone pulvérisant un traitement anti-mousse sur une toiture en tuiles" width="1600" height="912" loading="lazy" />
         </div>
         <div class="content">
           <span class="num">01 / Toitures</span>
@@ -301,7 +303,7 @@
 
       <article class="service-card span-6 reveal">
         <div class="img-wrap">
-          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/Screenshot_20250417_200430_Samsung-Internet.jpg?fit=900%2C700&amp;ssl=1" alt="Façade avant et après nettoyage par drone" width="900" height="700" loading="lazy" />
+          <img src="/uploads/realisations/facade-maison-apres.jpg" alt="Façade de maison nettoyée par drone, sans échafaudage" width="800" height="1000" loading="lazy" />
         </div>
         <div class="content">
           <span class="num">02 / Façades &amp; bardages</span>
@@ -313,7 +315,7 @@
 
       <article class="service-card span-4 reveal">
         <div class="img-wrap">
-          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/03/Drone-VX-500-x-400-px-4.png?fit=700%2C500&amp;ssl=1" alt="Drone nettoyant des panneaux photovoltaïques" width="700" height="500" loading="lazy" />
+          <img src="/uploads/realisations/verriere-drone.jpg" alt="Drone LM Drone nettoyant une verrière et des surfaces vitrées" width="900" height="1000" loading="lazy" />
         </div>
         <div class="content">
           <span class="num">03 / Photovoltaïque</span>
@@ -325,7 +327,7 @@
 
       <article class="service-card span-4 reveal">
         <div class="img-wrap">
-          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/Screenshot_20250401_184138_Gallery-2.jpg?fit=700%2C500&amp;ssl=1" alt="Nettoyage de monument historique par drone" width="700" height="500" loading="lazy" />
+          <img src="/uploads/realisations/chateau-drone.jpg" alt="Drone LM Drone prêt à intervenir sur un château" width="900" height="1000" loading="lazy" />
         </div>
         <div class="content">
           <span class="num">04 / Grandes surfaces</span>
@@ -337,7 +339,7 @@
 
       <article class="service-card span-4 reveal">
         <div class="img-wrap">
-          <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/04/file_000000001f6c51f79d0e79ebf9674b7a_conversation_id67e6ae1d-ed8c-800c-887d-16ff6473bf97message_idc7578ca3-c3a4-48c5-9d2a-d8b83f38fd2a.png?fit=700%2C500&amp;ssl=1" alt="Inspection de toiture par drone avec rapport" width="700" height="500" loading="lazy" />
+          <img src="/uploads/1000018124.jpg" alt="Inspection et traitement d'une toiture en ardoise par drone" width="1550" height="711" loading="lazy" />
         </div>
         <div class="content">
           <span class="num">05 / Inspection</span>
@@ -375,8 +377,8 @@
     </div>
 
     <div class="ba-wrap reveal" role="region" aria-label="Comparateur avant après">
-      <img src="uploads/1000018085.jpg?v=4" width="1962" height="1079" alt="Toiture couverte de mousses et lichens, avant nettoyage par drone LM Drone" />
-      <img class="ba-after" src="uploads/1000018083.jpg?v=4" width="1969" height="1080" alt="Toiture en ardoise propre après démoussage par drone LM Drone" />
+      <img src="uploads/1000018085.jpg?v=4" width="1600" height="880" alt="Toiture couverte de mousses et lichens, avant nettoyage par drone LM Drone" />
+      <img class="ba-after" src="uploads/1000018083.jpg?v=4" width="1600" height="878" alt="Toiture en ardoise propre après démoussage par drone LM Drone" />
       <div class="ba-label left">Avant</div>
       <div class="ba-label right">Après</div>
       <div class="ba-handle" aria-hidden="true"></div>
@@ -469,15 +471,15 @@
 
     <div class="gallery-grid reveal">
       <a href="#" class="gallery-item big">
-        <img src="uploads/1000018122.jpg" width="1894" height="1080" alt="Drone pulvérisant un traitement anti-mousse sur une toiture en tuiles — démoussage de toiture" loading="lazy" />
+        <img src="uploads/1000018122.jpg" width="1600" height="912" alt="Drone pulvérisant un traitement anti-mousse sur une toiture en tuiles — démoussage de toiture" loading="lazy" />
         <span class="tag">Traitement anti-mousse · Tuiles</span>
       </a>
       <a href="#" class="gallery-item med">
-        <img src="uploads/1000018120.jpg" width="1080" height="1767" alt="Drone de nettoyage en intervention sur la façade d'une maison — nettoyage de façade par drone" loading="lazy" />
+        <img src="uploads/1000018120.jpg" width="978" height="1600" alt="Drone de nettoyage en intervention sur la façade d'une maison — nettoyage de façade par drone" loading="lazy" />
         <span class="tag">Nettoyage façade</span>
       </a>
       <a href="#" class="gallery-item med">
-        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/20240424_164650.jpg?fit=600%2C800&amp;ssl=1" alt="Bardage en cours de nettoyage" width="600" height="800" loading="lazy" />
+        <img src="/uploads/realisations/bardage-apres.jpg" alt="Bardage métallique de bâtiment nettoyé par drone" width="800" height="1000" loading="lazy" />
         <span class="tag">Bardage</span>
       </a>
       <a href="#" class="gallery-item sm">
@@ -485,15 +487,15 @@
         <span class="tag">Démoussage ardoise</span>
       </a>
       <a href="#" class="gallery-item sm">
-        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/06/Capture-decran-2024-06-28-a-14.50.40.png?fit=600%2C400&amp;ssl=1" alt="Toiture après traitement hydrofuge" width="600" height="400" loading="lazy" />
+        <img src="/uploads/realisations/toiture-ardoise-apres.jpg" alt="Toiture en ardoise après démoussage et traitement hydrofuge" width="1200" height="600" loading="lazy" />
         <span class="tag">Hydrofuge</span>
       </a>
       <a href="#" class="gallery-item sm">
-        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/08/Capture-decran-2024-07-26-a-11.24.54.png?fit=600%2C400&amp;ssl=1" alt="Drone en intervention sur grand bâtiment" width="600" height="400" loading="lazy" />
+        <img src="/uploads/realisations/immeuble-facade-apres.jpg" alt="Façade d'immeuble nettoyée par drone" width="800" height="1000" loading="lazy" />
         <span class="tag">Industriel</span>
       </a>
       <a href="#" class="gallery-item sm">
-        <img src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-26-a-11.25.58.png?fit=600%2C400&amp;ssl=1" alt="Vue aérienne d'une intervention de nettoyage" width="600" height="400" loading="lazy" />
+        <img src="/uploads/realisations/toiture-perche-1.jpg" alt="Traitement de toiture complété à la perche télescopique de 10 m" width="900" height="1000" loading="lazy" />
         <span class="tag">Vue aérienne</span>
       </a>
     </div>
@@ -578,14 +580,13 @@
     </div>
 
     <div class="ig-grid reveal">
-      <image-slot id="ig1" shape="rounded" radius="12" placeholder="Photo Instagram 1" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.19.39.png?fit=600%2C600&amp;ssl=1"></image-slot>
-      <image-slot id="ig2" shape="rounded" radius="12" placeholder="Photo Instagram 2" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2025/03/20250221_115351.jpg?fit=600%2C600&amp;ssl=1"></image-slot>
-      <image-slot id="ig3" shape="rounded" radius="12" placeholder="Photo Instagram 3" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/04/20240424_164650.jpg?fit=600%2C600&amp;ssl=1"></image-slot>
-      <image-slot id="ig4" shape="rounded" radius="12" placeholder="Photo Instagram 4" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/07/Capture-decran-2024-07-31-a-17.15.45.png?fit=600%2C600&amp;ssl=1"></image-slot>
-      <image-slot id="ig5" shape="rounded" radius="12" placeholder="Photo Instagram 5" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/06/Capture-decran-2024-06-28-a-14.50.40.png?fit=600%2C600&amp;ssl=1"></image-slot>
-      <image-slot id="ig6" shape="rounded" radius="12" placeholder="Photo Instagram 6" src="https://i0.wp.com/lm-drone.fr/wp-content/uploads/2024/08/Capture-decran-2024-07-26-a-11.24.54.png?fit=600%2C600&amp;ssl=1"></image-slot>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/residence-pignon-apres.jpg" alt="Pignon de résidence après nettoyage de façade" width="800" height="1000" loading="lazy" /></a>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/chateau-drone.jpg" alt="Drone LM Drone avant une intervention sur un château" width="900" height="1000" loading="lazy" /></a>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/bardage-apres.jpg" alt="Bardage métallique nettoyé par drone" width="800" height="1000" loading="lazy" /></a>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/toiture-perche-2.jpg" alt="Traitement de toiture en ardoise à la perche" width="900" height="1000" loading="lazy" /></a>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/verriere-drone.jpg" alt="Nettoyage de verrière par drone" width="900" height="1000" loading="lazy" /></a>
+      <a href="https://www.instagram.com/lmdrone49/" target="_blank" rel="noopener" class="ig-cell"><img src="/uploads/realisations/pignon-enduit-apres.jpg" alt="Pignon enduit après nettoyage" width="800" height="1000" loading="lazy" /></a>
     </div>
-    <p class="muted" style="font-size:13px; margin-top:16px; text-align:center;">Glissez vos propres photos Instagram dans les cases ci-dessus pour les afficher ici.</p>
   </div>
 </section>
 
@@ -902,6 +903,5 @@
 </div>
 
 <script src="shared.js?v=8"></script>
-<script src="image-slot.js"></script>
 </body>
 </html>
