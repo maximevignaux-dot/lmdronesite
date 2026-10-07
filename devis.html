@@ -655,8 +655,9 @@
           <li><a href="/demoussage-toiture">Démoussage de toiture</a></li>
           <li><a href="/nettoyage-facade">Nettoyage de façade</a></li>
           <li><a href="/nettoyage-panneaux-solaires">Nettoyage panneaux solaires</a></li>
-          <li><a href="/services#toitures">Nettoyage toiture</a></li>
-          <li><a href="/services#inspection">Inspection &amp; vues aériennes</a></li>
+          <li><a href="/nettoyage-toiture">Nettoyage toiture</a></li>
+          <li><a href="/traitement-hydrofuge-toiture">Traitement hydrofuge</a></li>
+          <li><a href="/inspection-toiture-drone">Inspection &amp; vues aériennes</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -710,6 +711,11 @@
     if (cb) cb.checked = true;
   }
 
+  // Pre-fill the town from city pages (?ville=Cholet)
+  const villeParam = params.get('ville');
+  const villeInput = document.getElementById('ville');
+  if (villeParam && villeInput && !villeInput.value) villeInput.value = villeParam;
+
   // Highlight validation errors
   function markInvalid(fields) {
     fields.forEach(f => {
@@ -745,7 +751,10 @@
         body: new FormData(form)
       })
         .then(r => r.json())
-        .then(() => {
+        .then(data => {
+          // FormSubmit answers 200 even when it refuses the message (e.g. form not
+          // activated yet) — only show the success screen on a real success.
+          if (String(data.success) !== 'true') throw new Error(data.message || 'FormSubmit refused');
           form.style.display = 'none';
           successBlock.classList.add('visible');
           successBlock.scrollIntoView({ behavior: 'smooth', block: 'start' });

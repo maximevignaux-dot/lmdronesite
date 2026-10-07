@@ -282,4 +282,38 @@
       '</svg>';
     heroEl.appendChild(fly);
   }
+
+  // Quick call-back forms (city, department and service pages)
+  document.querySelectorAll('form.quick-lead').forEach(form => {
+    const msg = form.querySelector('.ql-msg');
+    const btn = form.querySelector('button[type="submit"]');
+    const label = btn.textContent;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (form.tel.value.replace(/\D/g, '').length < 9) {
+        msg.textContent = 'Merci d’indiquer un numéro de téléphone valide.';
+        form.tel.focus();
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = 'Envoi…';
+      fetch('https://formsubmit.co/ajax/maxime.lmdrone@gmail.com', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form)
+      })
+        .then(r => r.json())
+        .then(d => {
+          if (String(d.success) !== 'true') throw new Error(d.message || 'refused');
+          form.classList.add('sent');
+          btn.textContent = 'Demande envoyée ✓';
+          msg.textContent = 'Merci ! Nous vous rappelons très vite.';
+        })
+        .catch(() => {
+          btn.disabled = false;
+          btn.textContent = label;
+          msg.innerHTML = 'Envoi impossible pour le moment — appelez-nous au <a href="tel:+33644302373">06 44 30 23 73</a>.';
+        });
+    });
+  });
 })();

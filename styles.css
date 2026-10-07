@@ -1695,3 +1695,51 @@ section.tight { padding: clamp(40px, 5vw, 64px) 0; }
   .local-grid { grid-template-columns: 1fr !important; }
   .callout-cta { text-align: left !important; }
 }
+
+/* Quick call-back form (inside dark .cta-section) */
+.quick-lead {
+  margin: 28px auto 0;
+  max-width: 760px;
+  padding: 22px;
+  border-radius: var(--r-lg);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  text-align: left;
+}
+.quick-lead .ql-title { color: #FFFFFF; font-weight: 600; font-size: 15px; margin-bottom: 12px; }
+.quick-lead .ql-row { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 10px; }
+.quick-lead input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.95);
+  color: var(--text);
+  font: inherit;
+  font-size: 14.5px;
+}
+.quick-lead input:focus { outline: 2px solid var(--mint); outline-offset: 1px; }
+.quick-lead button { justify-content: center; }
+.quick-lead .ql-honey { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.quick-lead .ql-msg { color: var(--mint); font-size: 14px; margin-top: 10px; min-height: 1em; }
+.quick-lead .ql-msg a { color: #FFFFFF; text-decoration: underline; }
+.quick-lead .ql-trust { color: rgba(255,255,255,0.72); font-size: 13px; margin-top: 8px; }
+.quick-lead .ql-trust a { color: #FFFFFF; font-weight: 600; }
+.quick-lead.sent input { opacity: 0.6; pointer-events: none; }
+@media (max-width: 760px) { .quick-lead .ql-row { grid-template-columns: 1fr; } }
+
+/* Static before / after pairs */
+.ba-pairs { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.ba-pair { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; }
+.ba-pair .ba-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); }
+.ba-pair figure { position: relative; margin: 0; }
+.ba-pair img { width: 100%; height: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+.ba-pair.wide img { aspect-ratio: 2 / 1; }
+.ba-pair figcaption {
+  position: absolute; top: 8px; left: 8px;
+  font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  padding: 4px 9px; border-radius: var(--r-full);
+  background: rgba(5,13,27,0.78); color: #FFFFFF;
+}
+.ba-pair figure + figure figcaption { background: var(--accent); }
+.ba-pair p { padding: 12px 14px; font-size: 13.5px; color: var(--text-muted); }
