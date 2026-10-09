@@ -82,42 +82,175 @@
 
   <!-- Structured data — LocalBusiness -->
   <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ProfessionalService",
+ "@id": "https://lm-drone.fr/#business",
+ "name": "LM Drone",
+ "image": "https://lm-drone.fr/uploads/logo.png",
+ "url": "https://lm-drone.fr/",
+ "telephone": "+33644302373",
+ "email": "maxime.lmdrone@gmail.com",
+ "description": "Démoussage de toiture, traitement anti-mousse et hydrofuge, nettoyage de façade et de bardage par drone et perche télescopique, à Angers, en Maine-et-Loire et dans tous les Pays de la Loire. Télépilote certifié DGAC.",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "743 chemin de l'Oirie",
+  "addressLocality": "Longuenée en Anjou",
+  "postalCode": "49770",
+  "addressRegion": "Pays de la Loire",
+  "addressCountry": "FR"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 47.5237,
+  "longitude": -0.6986
+ },
+ "areaServed": [
   {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://lm-drone.fr/#business",
-    "name": "LM Drone",
-    "image": "https://lm-drone.fr/uploads/logo.png",
-    "url": "https://lm-drone.fr/",
-    "telephone": "+33644302373",
-    "email": "maxime.lmdrone@gmail.com",
-    "description": "Nettoyage et traitement par drone de toitures, façades et bardages en Pays de la Loire. Télépilote certifié DGAC.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "743 chemin de l'Oirie",
-      "addressLocality": "Longuenée en Anjou",
-      "postalCode": "49770",
-      "addressRegion": "Pays de la Loire",
-      "addressCountry": "FR"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 47.5237, "longitude": -0.6986 },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Pays de la Loire" },
-      { "@type": "AdministrativeArea", "name": "Maine-et-Loire" },
-      { "@type": "City", "name": "Angers" }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "08:00", "closes": "19:00"
-    },
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61559597133904",
-      "https://www.instagram.com/lmdrone49/",
-      "https://www.google.com/maps/search/?api=1&query=LM+DRONE+Longuen%C3%A9e-en-Anjou"
-    ],
-    "hasCredential": "DGAC — RS5235"
+   "@type": "AdministrativeArea",
+   "name": "Pays de la Loire"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Maine-et-Loire"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Loire-Atlantique"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Vendée"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Sarthe"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Mayenne"
+  },
+  {
+   "@type": "City",
+   "name": "Angers"
+  },
+  {
+   "@type": "City",
+   "name": "Nantes"
+  },
+  {
+   "@type": "City",
+   "name": "Cholet"
+  },
+  {
+   "@type": "City",
+   "name": "Saumur"
+  },
+  {
+   "@type": "City",
+   "name": "Le Mans"
+  },
+  {
+   "@type": "City",
+   "name": "Laval"
+  },
+  {
+   "@type": "City",
+   "name": "La Roche-sur-Yon"
   }
+ ],
+ "openingHoursSpecification": {
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday"
+  ],
+  "opens": "08:00",
+  "closes": "19:00"
+ },
+ "sameAs": [
+  "https://www.facebook.com/profile.php?id=61559597133904",
+  "https://www.instagram.com/lmdrone49/",
+  "https://www.google.com/maps/search/?api=1&query=LM+DRONE+Longuen%C3%A9e-en-Anjou"
+ ],
+ "hasCredential": "DGAC — RS5235",
+ "logo": "https://lm-drone.fr/uploads/logo.png",
+ "knowsAbout": [
+  "Démoussage de toiture",
+  "Traitement anti-mousse",
+  "Traitement hydrofuge",
+  "Nettoyage de façade",
+  "Nettoyage de bardage",
+  "Nettoyage de panneaux solaires",
+  "Inspection de toiture par drone"
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Services de nettoyage et traitement par drone",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Démoussage de toiture",
+     "url": "https://lm-drone.fr/demoussage-toiture"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Nettoyage de toiture",
+     "url": "https://lm-drone.fr/nettoyage-toiture"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Traitement hydrofuge de toiture",
+     "url": "https://lm-drone.fr/traitement-hydrofuge-toiture"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Nettoyage de façade",
+     "url": "https://lm-drone.fr/nettoyage-facade"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Nettoyage de bardage",
+     "url": "https://lm-drone.fr/nettoyage-bardage"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Nettoyage de panneaux solaires",
+     "url": "https://lm-drone.fr/nettoyage-panneaux-solaires"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Inspection de toiture par drone",
+     "url": "https://lm-drone.fr/inspection-toiture-drone"
+    }
+   }
+  ]
+ }
+}
   </script>
 
   <script type="application/ld+json">
@@ -140,7 +273,7 @@
       { "@type":"Question", "name":"Le nettoyage par drone est-il efficace ?",
         "acceptedAnswer":{"@type":"Answer","text":"Oui. Le drone pulvérise un produit fongicide biodégradable sur l'ensemble de la toiture. Les premiers résultats sont visibles en quelques semaines, le résultat final en quelques mois grâce à l'action de la pluie."}},
       { "@type":"Question", "name":"Où intervenez-vous ?",
-        "acceptedAnswer":{"@type":"Answer","text":"Nous intervenons dans toute la région Pays de la Loire, principalement en Maine-et-Loire (Angers, Longuenée en Anjou) et départements limitrophes."}},
+        "acceptedAnswer":{"@type":"Answer","text":"Nous intervenons dans tous les Pays de la Loire (Maine-et-Loire, Loire-Atlantique, Vendée, Sarthe, Mayenne) et au-delà sur demande, depuis notre base de Longuenée-en-Anjou, près d'Angers."}},
       { "@type":"Question", "name":"Êtes-vous certifiés pour piloter un drone professionnel ?",
         "acceptedAnswer":{"@type":"Answer","text":"Oui. LM Drone est habilité RS5235 et certifié par la Direction Générale de l'Aviation Civile (DGAC)."}},
       { "@type":"Question", "name":"Faut-il être présent pendant l'intervention ?",
@@ -211,7 +344,7 @@
           <em>par drone</em>.
         </h1>
         <p class="lead mt-4">
-          Démoussage, traitement hydrofuge et inspection aérienne en Pays de la Loire.
+          Démoussage de toiture, traitement anti-mousse et hydrofuge, nettoyage de façade et de bardage à Angers, en Maine-et-Loire et dans tous les Pays de la Loire.
           Sans échafaudage, sans monter sur le toit&nbsp;: plus rapide, plus sûr, et nettement plus économique.
         </p>
         <div class="hero-actions">
@@ -745,7 +878,7 @@
     <div class="section-head reveal">
       <span class="eyebrow">Zones d'intervention</span>
       <h2 id="zones-title" class="h-1">5 départements, toute la région.</h2>
-      <p class="lead">LM Drone intervient dans l'ensemble des Pays de la Loire — du Maine-et-Loire à la Vendée — ainsi que sur les départements limitrophes.</p>
+      <p class="lead">LM Drone intervient dans l'ensemble des Pays de la Loire — du Maine-et-Loire à la Vendée, de la Sarthe à la Loire-Atlantique — et au-delà sur demande.</p>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;" class="reveal">
@@ -842,7 +975,7 @@
           <span>Où intervenez-vous&nbsp;?</span>
           <span class="icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
         </button>
-        <div class="faq-a"><p>Toute la région Pays de la Loire, principalement Maine-et-Loire (Angers, Longuenée en Anjou, Cholet, Saumur) et départements limitrophes (Loire-Atlantique, Vendée, Mayenne, Sarthe).</p></div>
+        <div class="faq-a"><p>Nous intervenons dans tous les Pays de la Loire (Maine-et-Loire, Loire-Atlantique, Vendée, Sarthe, Mayenne) et au-delà sur demande, depuis notre base de Longuenée-en-Anjou, près d'Angers.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
@@ -918,6 +1051,7 @@
           <li><a href="/nettoyage-toiture">Nettoyage de toiture</a></li>
           <li><a href="/traitement-hydrofuge-toiture">Traitement hydrofuge</a></li>
           <li><a href="/nettoyage-facade">Nettoyage de façade</a></li>
+          <li><a href="/nettoyage-bardage">Nettoyage de bardage</a></li>
           <li><a href="/nettoyage-panneaux-solaires">Nettoyage panneaux solaires</a></li>
           <li><a href="/inspection-toiture-drone">Inspection de toiture</a></li>
         </ul>
