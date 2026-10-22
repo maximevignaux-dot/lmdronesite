@@ -1,0 +1,75 @@
+{
+  "slug": "duree-traitement-hydrofuge-toiture",
+  "titre": "Combien de temps dure un traitement hydrofuge de toiture ?",
+  "titre_court": "Durée d'un traitement hydrofuge",
+  "description": "Combien de temps protège un hydrofuge de toiture, ce qui l'use plus vite et quand le refaire : les conseils d'un professionnel en Pays de la Loire.",
+  "chapo": "En général, un traitement hydrofuge protège la toiture plusieurs années. En Pays de la Loire, on conseille de le refaire tous les 3 à 5 ans, plus souvent sur un versant nord ou sous les arbres. Voici ce qui fait varier cette durée.",
+  "lecture_min": 5,
+  "date": "2026-10-22",
+  "image": "uploads/realisations/toiture-perche-1.jpg",
+  "image_alt": "Pulvérisation d'un traitement fongicide et hydrofuge sur une toiture",
+  "fond": "uploads/1000018122.jpg",
+  "sections": [
+    {
+      "titre": "Ce que fait vraiment un hydrofuge",
+      "paragraphes": [
+        "Un hydrofuge est un produit qui pénètre dans les pores de la tuile ou de l'ardoise et les rend <strong>imperméables à l'eau</strong>, sans les boucher : le matériau continue de respirer. La pluie perle et glisse au lieu d'être absorbée.",
+        "Une couverture qui boit moins d'eau sèche plus vite. Les mousses et les lichens, qui ont besoin d'humidité pour s'installer, repoussent donc plus lentement. Le gel abîme aussi moins les tuiles, puisqu'il y a moins d'eau à l'intérieur pour les faire éclater.",
+        "Chez LM Drone, nous appliquons un produit qui combine <strong>fongicide et hydrofuge en une seule pulvérisation</strong> : il tue les mousses existantes et protège la couverture dans le même passage. Il n'y a pas de deuxième traitement à prévoir."
+      ]
+    },
+    {
+      "titre": "Combien de temps dure la protection ?",
+      "paragraphes": [
+        "La protection dure <strong>plusieurs années</strong>, mais elle diminue progressivement : les ultraviolets, la pluie et les variations de température usent peu à peu le produit en surface. Il n'y a pas de date de fin nette, plutôt un effet qui s'atténue.",
+        "Dans le climat doux et humide des Pays de la Loire, nous conseillons de <strong>refaire un traitement tous les 3 à 5 ans</strong>. C'est aussi le rythme d'entretien qui évite aux mousses de s'incruster à nouveau."
+      ]
+    },
+    {
+      "titre": "Ce qui use l'hydrofuge plus vite",
+      "paragraphes": [
+        "Deux toitures traitées le même jour ne vieilliront pas au même rythme. Plusieurs facteurs raccourcissent la protection :"
+      ],
+      "liste": [
+        "un <strong>versant exposé au nord</strong>, qui sèche mal et reste humide plus longtemps ;",
+        "des <strong>arbres à proximité</strong>, qui apportent ombre, feuilles et spores ;",
+        "la proximité d'un <strong>cours d'eau ou de la mer</strong> : Loire, Maine, Sarthe, côte vendéenne ;",
+        "une couverture <strong>ancienne ou très poreuse</strong>, qui absorbe davantage ;",
+        "des <strong>gouttières bouchées</strong>, qui laissent l'eau stagner en bas de pente."
+      ],
+      "apres_liste": [
+        "À l'inverse, une toiture bien exposée, dégagée et en bon état garde sa protection plus longtemps."
+      ]
+    },
+    {
+      "titre": "Comment savoir s'il faut refaire le traitement ?",
+      "paragraphes": [
+        "Le test le plus simple se fait après une averse : regardez si la pluie <strong>perle encore</strong> sur les tuiles ou si elles foncent en absorbant l'eau. Des tuiles qui restent sombres longtemps après la pluie ont perdu une partie de leur protection.",
+        "Les premières <strong>taches vertes ou grises</strong>, souvent en bas de pente ou côté nord, sont un autre signal. Mieux vaut traiter à ce stade que d'attendre que les mousses forment des coussins épais. Notre guide sur les <a href=\"/conseils/signes-toiture-a-demousser\">signes d'une toiture à démousser</a> détaille ce qu'il faut regarder depuis le jardin."
+      ]
+    },
+    {
+      "titre": "Quand faire le traitement ?",
+      "paragraphes": [
+        "Le produit doit être appliqué <strong>sur une toiture sèche</strong>, sans pluie annoncée dans les heures qui suivent, et hors période de gel. L'automne et la fin de l'hiver sont de bonnes périodes pour démousser, car les mousses sont alors en pleine activité et absorbent bien le fongicide. Le traitement reste possible toute l'année dès que la météo le permet.",
+        "Par drone, la pulvérisation se fait <strong>sans monter sur le toit</strong> et sans échafaudage : l'intervention dure en général 2 à 3 heures pour une maison. Les rives et les zones abritées sont complétées à la perche télescopique de 10 m. Plus de détails sur notre page <a href=\"/traitement-hydrofuge-toiture\">traitement hydrofuge de toiture</a>."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Faut-il démousser avant d'appliquer un hydrofuge ?",
+      "reponse": "Oui, l'hydrofuge doit être appliqué sur une couverture débarrassée de ses mousses. Avec un produit fongicide et hydrofuge combiné, les deux se font en une seule pulvérisation."
+    },
+    {
+      "question": "Un hydrofuge change-t-il la couleur des tuiles ?",
+      "reponse": "Un hydrofuge incolore ne change pas la teinte de la couverture. La toiture retrouve surtout sa couleur d'origine une fois les mousses et lichens éliminés par la pluie."
+    },
+    {
+      "question": "Le traitement convient-il à l'ardoise ?",
+      "reponse": "Oui, il s'applique sur l'ardoise comme sur la tuile ou le fibro-ciment. Sur l'ardoise, la pulvérisation par drone évite surtout de marcher sur des ardoises fragiles."
+    }
+  ],
+  "service": {"url": "/traitement-hydrofuge-toiture", "nom": "traitement hydrofuge de toiture par drone"},
+  "a_lire_aussi": ["quand-demousser-sa-toiture", "demoussage-ou-nettoyage-haute-pression"]
+}

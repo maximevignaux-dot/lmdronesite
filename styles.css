@@ -1981,3 +1981,6 @@ html.js .reveal .img-wrap img, html.js .reveal .gallery-item img, html.js .servi
 .pricing-card .price-unit, .pricing-card li, .pricing-card p { color: var(--text-muted); }
 .pricing-card li svg { color: var(--accent); }
 .pricing-card .btn-primary { color: #FFFFFF; }
+.article-meta { margin-top: 14px; font-size: 13px; color: var(--text-dim); }
+.page-header.has-photo .article-meta, .page-header.has-photo p[style*="text-dim"] { color: rgba(255,255,255,0.75) !important; }
+.prose h3 { margin-top: 22px; }
